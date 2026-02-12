@@ -1,0 +1,52 @@
+/* ===== TABLE WRAPPER ===== */
+.table-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Enables horizontal scrolling when table is wider than screen */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on mobile */
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* Optional: Custom Scrollbar (Chrome, Edge, Safari) */
+.table-responsive::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #686565;
+}
+
+/* ===== TABLE ===== */
+.table-responsive table {
+  width: max-content; /* Allows table to expand beyond screen */
+  min-width: 100%; /* Prevent shrinking */
+  border-collapse: collapse;
+  white-space: nowrap; /* Prevents column wrapping */
+}
+
+/* Optional: Better table styling */
+.table-responsive th,
+.table-responsive td {
+  padding: 10px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table-responsive thead {
+  background-color: #f8f9fa;
+}
